@@ -1,0 +1,6 @@
+framework module Pods_MapGuide {
+  umbrella header "Pods-MapGuide-umbrella.h"
+
+  export *
+  module * { export * }
+}

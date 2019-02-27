@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MapMarkerWindow" customModule="MapGuide" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="165"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Osg-nK-PJn">
+                    <rect key="frame" x="5" y="5" width="130" height="130"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="130" id="Xkh-Af-3Eu"/>
+                        <constraint firstAttribute="width" constant="130" id="Yf0-4c-GTV"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AWc-DC-vzw">
+                    <rect key="frame" x="140" y="5" width="220" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yo2-8r-Ena">
+                    <rect key="frame" x="140" y="31" width="220" height="104"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="104" id="qc2-vA-mez"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLD-U2-NJd">
+                    <rect key="frame" x="5" y="140" width="130" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="tiB-se-fSb"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="moreButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="cWN-hA-hbL"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWF-Os-Fkf">
+                    <rect key="frame" x="140" y="140" width="220" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="aJf-ve-LN5"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="routeFromButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="PRY-Oo-WUw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Yo2-8r-Ena" firstAttribute="top" secondItem="AWc-DC-vzw" secondAttribute="bottom" constant="5" id="2s5-Ho-E1e"/>
+                <constraint firstItem="AWc-DC-vzw" firstAttribute="leading" secondItem="Osg-nK-PJn" secondAttribute="trailing" constant="5" id="33n-sC-rfq"/>
+                <constraint firstItem="XLD-U2-NJd" firstAttribute="trailing" secondItem="Osg-nK-PJn" secondAttribute="trailing" id="9AR-mM-FBA"/>
+                <constraint firstItem="XLD-U2-NJd" firstAttribute="top" secondItem="Osg-nK-PJn" secondAttribute="bottom" constant="5" id="9za-ZG-G4B"/>
+                <constraint firstItem="PWF-Os-Fkf" firstAttribute="top" secondItem="Yo2-8r-Ena" secondAttribute="bottom" constant="5" id="AW8-tR-ShV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Yo2-8r-Ena" secondAttribute="trailing" constant="15" id="Jjg-i1-wdg"/>
+                <constraint firstItem="XLD-U2-NJd" firstAttribute="leading" secondItem="Osg-nK-PJn" secondAttribute="leading" id="K0C-yf-jp5"/>
+                <constraint firstItem="Yo2-8r-Ena" firstAttribute="leading" secondItem="Osg-nK-PJn" secondAttribute="trailing" constant="5" id="OOb-wx-75Z"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="XLD-U2-NJd" secondAttribute="bottom" constant="5" id="Vqe-GF-JQJ"/>
+                <constraint firstItem="Osg-nK-PJn" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="YeL-wi-yeJ"/>
+                <constraint firstItem="PWF-Os-Fkf" firstAttribute="leading" secondItem="XLD-U2-NJd" secondAttribute="trailing" constant="5" id="akk-U7-NBg"/>
+                <constraint firstItem="AWc-DC-vzw" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="cjf-vb-L45"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="AWc-DC-vzw" secondAttribute="trailing" constant="15" id="m3C-vS-m2K"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="PWF-Os-Fkf" secondAttribute="trailing" constant="15" id="noT-Vf-U2D"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="PWF-Os-Fkf" secondAttribute="bottom" constant="5" id="pi5-f0-8gg"/>
+                <constraint firstItem="Osg-nK-PJn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="wr9-lU-saH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="descriptionMarkerLabel" destination="Yo2-8r-Ena" id="Epj-HT-HXb"/>
+                <outlet property="markerImageView" destination="Osg-nK-PJn" id="v21-ew-6l9"/>
+                <outlet property="moreButton" destination="XLD-U2-NJd" id="rAe-8i-cth"/>
+                <outlet property="routeFromButton" destination="PWF-Os-Fkf" id="W60-Ly-ytE"/>
+                <outlet property="titleMarkerLabel" destination="AWc-DC-vzw" id="1QV-d4-ObM"/>
+            </connections>
+            <point key="canvasLocation" x="40.799999999999997" y="-7.6461769115442282"/>
+        </view>
+    </objects>
+</document>
